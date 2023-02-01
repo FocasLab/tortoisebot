@@ -25,7 +25,7 @@ sudo apt-get install ros-$ROS_DISTRO-rosserial
 ### 1.4 Clone the TortoiseBot Mini Repo:
 Clone the TortoiseBot Mini repo into your src folder of your catkin workspace
 ```
-git clone https://github.com/rigbetellabs/tortoisebot_mini
+git clone https://github.com/FocasLab/tortoisebot
 ```
 
 ## 2. Setup:
