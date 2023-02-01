@@ -76,7 +76,7 @@ DO NOT TURN ON THE ROBOT YET!
 
 ### 2.6 Connecting your laptop to ROS Master:
 
-After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines.
+After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines. Add this lines to end of you ```.bashrc ``` file.
 
 ```
 export ROS_IP=<IP of your machine>
