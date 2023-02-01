@@ -5,7 +5,10 @@
   <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen">
     <param name="port" value="tcp"/>
     <!-- <param name="port" value="/dev/ttyACM1"/>
-    <param name="baud" value="115200"/> -->
+    <param name="baud" value="115200"/> -->  
+  <node name= "cmdvel_listener" pkg= "tortoisebot" type="differential.py" output="screen"/>
+
+
   </node>
 
 </launch>

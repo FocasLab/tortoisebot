@@ -1,0 +1,53 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/jeelros/catkin_ws/devel/include/**",
+        "/home/jeelros/interbotix_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/jeelros/catkin_ws/src/ase_exploration/include/**",
+        "/home/jeelros/catkin_ws/src/autonomous_exploration/autoexpl_ros/include/**",
+        "/home/jeelros/catkin_ws/src/CERES/ceres-solver-1.14.0/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_core/interbotix_ros_xseries/dynamixel_workbench_toolbox/include/**",
+        "/home/jeelros/catkin_ws/src/frontier_exploration/exploration_server/include/**",
+        "/home/jeelros/catkin_ws/src/f1tenth_simulator/include/**",
+        "/home/jeelros/catkin_ws/src/frontier_exploration/frontier_exploration/include/**",
+        "/home/jeelros/catkin_ws/src/imu_calib/include/**",
+        "/home/jeelros/catkin_ws/src/imu_tools/imu_complementary_filter/include/**",
+        "/home/jeelros/catkin_ws/src/imu_tools/imu_filter_madgwick/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_moveit_interface/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_common_toolbox/interbotix_tf_tools/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_ros_control/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_toolboxes/interbotix_xs_toolbox/interbotix_xs_rviz/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_core/interbotix_ros_xseries/interbotix_xs_sdk/include/**",
+        "/home/jeelros/interbotix_ws/src/interbotix_ros_manipulators/interbotix_ros_xsarms/examples/interbotix_xsarm_pid/include/**",
+        "/home/jeelros/catkin_ws/src/focas_lab_robots/limo/limo_gazebo_sim/include/**",
+        "/home/jeelros/catkin_ws/src/LIO-SAM/include/**",
+        "/home/jeelros/catkin_ws/src/obstacle_detection/include/**",
+        "/home/jeelros/catkin_ws/src/phasespace_pkgs/phasespace_bringup/include/**",
+        "/home/jeelros/catkin_ws/src/pkg_ros_motor/include/**",
+        "/home/jeelros/catkin_ws/src/frontier_exploration/polygon_layer/include/**",
+        "/home/jeelros/catkin_ws/src/ros_autonomous_slam/include/**",
+        "/home/jeelros/catkin_ws/src/ros_control_example/include/**",
+        "/home/jeelros/catkin_ws/src/rosserial/rosserial_server/include/**",
+        "/home/jeelros/catkin_ws/src/rosserial/rosserial_test/include/**",
+        "/home/jeelros/catkin_ws/src/scots_exploration/include/**",
+        "/home/jeelros/catkin_ws/src/3-DOF_Manipulator-master/three_dof_planar_manipulator/include/**",
+        "/home/jeelros/catkin_ws/src/3-DOF_Manipulator-master/three_dof_planar_manipulator_ikfast_arm_plugin/include/**",
+        "/home/jeelros/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include/**",
+        "/home/jeelros/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -41,11 +41,25 @@ This should build the required msgs
 
 ### 2.1 Change Wi-Fi's SSID and Password:
 
-Open the [tortoisebot_mini_ros](https://github.com/rigbetellabs/tortoisebot_mini/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code in Arduino IDE and change the SSID and Password on line number 25 & 26 to that of your Wi-Fi Connection.
+Open the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code in Arduino IDE and change the SSID and Password of the Wi-Fi Connection.
+
+```
+const char* ssid = "";
+const char* password = "";
+```
 
 ### 2.2 Change the ROS Master IP Address:
 
-Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 31 of [tortoisebot_mini_ros](https://github.com/rigbetellabs/tortoisebot_mini/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
+Run the following command on the machine which will act as ROS Master PC (in our case the lab computer) after connecting to the lab's wifi.
+```
+hostname -I
+```
+Use the this IP address the .ino file.
+```
+IPAddress server(192,168,x,x);
+```
+
+Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 31 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
 
 ### 2.3 Check Board and Port:
 
@@ -53,18 +67,34 @@ Make sure the switch on motor driver board is turned off and battery is not conn
 
 ### 2.4 Upload the Code:
 
-Upload the [tortoisebot_mini_ros](https://github.com/rigbetellabs/tortoisebot_mini/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code on your ESP32 board.
+Upload the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code on your ESP32 board.
 
 ### 2.5 Connection:
 
 Once code is Successfully uploaded, disconnect the USB Cable and connect the DC Jack of Battery to the Board . <br>
 DO NOT TURN ON THE ROBOT YET!
 
+### 2.6 Connecting your laptop to ROS Master:
+
+After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines.
+
+```
+export ROS_IP=<IP of your machine>
+export ROS_MASTER_URI=http://<IP of Master Machine>:11311
+```
+Example:-
+
+```
+export ROS_IP=192.168.0.203
+export ROS_MASTER_URI=http://192.168.0.127:11311
+```
+
 ## 3. Demo:
 
 ### 3.1 Running ROS Master:
 
-Launch the [tortoisebot_mini.launch](https://github.com/rigbetellabs/tortoisebot_mini/blob/506f832b9e0385ce1e38ce5b1219167dbe5a9f84/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
+Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
+
 ```
 roslaunch tortoisebot_mini tortoisebot_mini.launch
 ```
