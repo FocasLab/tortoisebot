@@ -18,8 +18,8 @@ After that go into Tools > Board > Boards Manager and search for "esp32" and ins
 
 ### 1.3 Install ROS Serial Library for Arduino on Ubuntu:
 ```
-sudo apt-get install ros-$ROS_DISTRO-rosserial-arduino
-sudo apt-get install ros-$ROS_DISTRO-rosserial
+sudo apt-get install ros-noetic-rosserial-arduino
+sudo apt-get install ros-noetic-rosserial
 ```
 
 ### 1.4 Clone the TortoiseBot Mini Repo:
@@ -76,7 +76,7 @@ DO NOT TURN ON THE ROBOT YET!
 
 ### 2.6 Connecting your laptop to ROS Master:
 
-After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines. Add this lines to end of you ```.bashrc ``` file.
+After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines. Add this lines to end of you ```.bashrc``` file.
 
 ```
 export ROS_IP=<IP of your machine>
