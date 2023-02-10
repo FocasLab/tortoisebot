@@ -7,7 +7,7 @@
 // lback - Right Backward Pin
 
 #include <ros.h>
-#include <tortoisebot_mini/Diff.h>
+#include <tortoisebot/Diff.h>
 #include <WiFi.h>
 #include<analogWrite.h>
 
@@ -22,13 +22,13 @@
 #define rbackPin 27 
 
 //add your wifi ssid & password
-const char* ssid = "Rigbetel Labs HQ";
-const char* password = "Starsoforion2020";
+const char* ssid = "focaslab";
+const char* password = "wifi@focaslab";
 
 WiFiClient client;
 //add host device IP address
 // to find host IP in cmd : hostname -I
-IPAddress server(192,168,0,160);
+IPAddress server(192,168,0,203);
 
 class WiFiHardware {
   public:
@@ -68,12 +68,10 @@ int lefpwm = 0;
 
 ros::NodeHandle_<WiFiHardware> nh;
 
-void diffCb(const tortoisebot_mini::Diff& toggle_msg){
+void diffCb(const tortoisebot::Diff& toggle_msg){
 
   Serial.print("toggle_msg.rpwm.data: ");
   Serial.println(toggle_msg.rpwm.data);
-
-  
   
   analogWrite(rpwmPin, toggle_msg.rpwm.data);
   analogWrite(lpwmPin, toggle_msg.lpwm.data);
@@ -89,7 +87,7 @@ void diffCb(const tortoisebot_mini::Diff& toggle_msg){
   
 }
 
-ros::Subscriber<tortoisebot_mini::Diff> sub_diff("diff", diffCb );
+ros::Subscriber<tortoisebot::Diff> sub_diff("diff", diffCb );
 
 void setup() {
   
