@@ -18,8 +18,7 @@ class Tortoisebot:
 
         # A subscriber to the topic '/turtle1/pose'. self.update_pose is called
         # when a message of type Pose is received.
-        self.pose_subscriber = rospy.Subscriber('/phasespace/markers',
-                                                Markers, self.update_pose)
+        self.pose_subscriber = rospy.Subscriber('/phasespace/markers', Markers, self.update_pose)
 
         self.pose = Pose2D()
         self.rate = rospy.Rate(10)
@@ -30,8 +29,8 @@ class Tortoisebot:
         # Put the led number as per the position on the robot.
         # dyn-> led on the dynamics point of the robot
         # ori-> led on the center of the robot
-        marker_dyn = data.markers[led_dyn]
-        marker_ori = data.markers[led_ori]
+        marker_dyn = data.markers[2]
+        marker_ori = data.markers[3]
 
         self.pose.x = round(marker_dyn.x, 4)
         self.pose.y = round(marker_dyn.y, 4)
@@ -48,7 +47,7 @@ class Tortoisebot:
         """
         # Your code goes here
 
-        
+
         # Your code ends here
 
     def linear_vel(self, goal_x, goal_y, constant=1.5):
@@ -58,7 +57,8 @@ class Tortoisebot:
         """
         # Your code goes here
 
-        
+
+
         # Your code ends here 
 
     def steering_angle(self, goal_x, goal_y):
@@ -68,7 +68,8 @@ class Tortoisebot:
         """
         # Your code goes here
 
-        
+
+
         # Your code ends here
 
     def angular_vel(self, goal_x, goal_y, constant=6):
@@ -78,8 +79,10 @@ class Tortoisebot:
         """
         # Your code goes here
 
-        
+
+
         # Your code ends here
+        return ang_vel
 
     def move2goal(self, goal_x, goal_y, distance_tolerance):
         """Description: Moves the Tortoise bot to the goal.
@@ -90,7 +93,12 @@ class Tortoisebot:
         # Your Code goes here
         while ():
             
-
+            
+            
+            
+            
+            
+            
             
             
             # Your Code ends here
@@ -114,11 +122,11 @@ if __name__ == '__main__':
         bot = Tortoisebot()
 
         # Get the input from the user.
-        goal_x = float(input("Set your x goal: "))
-        goal_y = float(input("Set your y goal: "))
+        goal_x =  float(input("Set your x goal: "))
+        goal_y =  float(input("Set your y goal: "))
 
         # Please, insert a number slightly greater than 0 (e.g. 0.01).
-        distance_tolerance = input("Set your tolerance: ")
+        distance_tolerance = float(input("Set your tolerance: "))
 
         bot.move2goal(goal_x, goal_y, distance_tolerance)
 
