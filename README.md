@@ -96,7 +96,7 @@ export ROS_MASTER_URI=http://192.168.0.127:11311
 Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
 
 ```
-roslaunch tortoisebot_mini tortoisebot_mini.launch
+roslaunch tortoisebot tortoisebot_mini.launch
 ```
 It will prompt a INFO message saying "Waiting for socket connections on port 11411 waiting for socket connection"<br>
 
