@@ -118,6 +118,16 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 > - Angular Velocity : 2.175 r/s
 
 Now you can control the robot using teleoperation commands.
+If the Twist keyboard does not work try directly publishing the velocity commands 
+rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+  x: 0.3
+  y: 0.0
+  z: 0.0
+angular:
+  x: 0.0
+  y: 0.0
+  z: 0.2"
+
 
 ## References:
 - http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
