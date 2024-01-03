@@ -38,6 +38,9 @@ rosrun rosserial_arduino make_libraries.py .
 ```
 This should build the required msgs 
 
+In your linux system in home,in Arduino folder-->Library the ros_lib folder will be present after building using the above command
+Inside this ros_lib folder create a new folder tortoisebot_mini and paste the diff.h file inside
+
 
 ### 2.1 Change Wi-Fi's SSID and Password:
 
