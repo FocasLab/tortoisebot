@@ -96,7 +96,7 @@ export ROS_MASTER_URI=http://192.168.0.127:11311
 
 ### 3.1 Running ROS Master:
 
-Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
+Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot_mini/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
 
 ```
 roslaunch tortoisebot tortoisebot_mini.launch
