@@ -96,10 +96,10 @@ export ROS_MASTER_URI=http://192.168.0.127:11311
 
 ### 3.1 Running ROS Master:
 
-Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot_mini/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
+Launch the [tortoisebot_mini.launch](https://github.com/FocasLab/tortoisebot/blob/main/launch/tortoisebot_mini.launch) file on your Master PC to start ROS Master along with ROS Serial Node.
 
 ```
-roslaunch tortoisebot tortoisebot_mini.launch
+roslaunch tortoisebot_mini tortoisebot_mini.launch
 ```
 It will prompt a INFO message saying "Waiting for socket connections on port 11411 waiting for socket connection"<br>
 
@@ -118,15 +118,11 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 > - Angular Velocity : 2.175 r/s
 
 Now you can control the robot using teleoperation commands.
+
 If the Twist keyboard does not work try directly publishing the velocity commands 
-rostopic pub /cmd_vel geometry_msgs/Twist "linear:
-  x: 0.3
-  y: 0.0
-  z: 0.0
-angular:
-  x: 0.0
-  y: 0.0
-  z: 0.2"
+
+rostopic pub /cmd_vel geometry_msgs/Twist '{linear: {x: 0.3, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.2}}'
+
 
 
 ## References:
