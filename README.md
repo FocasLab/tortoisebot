@@ -51,19 +51,19 @@ Red - Hall H1 output signal - connect to gpio pin
 Brown - Hall power negative - connect to ground pin
 
 
-// Motor 1 (existing motor) pins and encoder variables
+// Motor 1  pins and encoder variables
 const int encoderPinA1 = 18;
 const int encoderPinB1 = 19;
-const int motorPWMPin1 = 32; // Ensure this pin supports PWM
-const int motorDirPin1_1 = 25; // First direction pin connected to motor 1
-const int motorDirPin1_2 = 26; // Second direction pin connected to motor 1
+const int motorPWMPin1 = 32; 
+const int motorDirPin1_1 = 25; 
+const int motorDirPin1_2 = 26; 
 
-// Motor 2 (new motor) pins and encoder variables
+// Motor 2  pins and encoder variables
 const int encoderPinA2 = 16;
 const int encoderPinB2 = 17;
-const int motorPWMPin2 = 33; // PWM pin connected to motor 2
-const int motorDirPin2_1 = 13; // First direction pin connected to motor 2
-const int motorDirPin2_2 = 27; // Second direction pin connected to motor 2
+const int motorPWMPin2 = 33; 
+const int motorDirPin2_1 = 13; 
+const int motorDirPin2_2 = 27; 
 
 
 ### 2.1 Change Wi-Fi's SSID and Password:
