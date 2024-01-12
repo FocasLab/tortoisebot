@@ -41,6 +41,14 @@ This should build the required msgs
 In your linux system in home,in Arduino folder-->Library the ros_lib folder will be present after building using the above command
 Inside this ros_lib folder create a new folder tortoisebot_mini and paste the diff.h file inside
 
+CONNECTIONS- 
+There are 6 connecting wire from motor-
+Blue - Motor negative pole
+Green - Motor positive pole
+Yellow - Hall Power positive - connect to 5V pin
+Orange - Hall H2 output signal - connect to gpio pin
+Red - Hall H1 output signal - connect to gpio pin
+Brown - Hall power negative - connect to ground
 
 ### 2.1 Change Wi-Fi's SSID and Password:
 
