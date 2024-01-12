@@ -64,6 +64,7 @@ const int encoderPinB2 = 17;
 const int motorPWMPin2 = 33; 
 const int motorDirPin2_1 = 13; 
 const int motorDirPin2_2 = 27; 
+![Uploading IMG20240112153731.jpg…]()
 
 
 ### 2.1 Change Wi-Fi's SSID and Password:
