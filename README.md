@@ -1,4 +1,4 @@
-# TortoiseBot Mini
+![IMG20240112153750](https://github.com/FocasLab/tortoisebot/assets/99411053/540963a5-51c7-4cb7-8e46-a4ce1e2b316e)# TortoiseBot Mini
 
 ## 1. Installation:
 
@@ -60,11 +60,16 @@ const int motorDirPin1_2 = 26;
 
 // Motor 2  pins and encoder variables
 const int encoderPinA2 = 16;
+
 const int encoderPinB2 = 17;
 const int motorPWMPin2 = 33; 
 const int motorDirPin2_1 = 13; 
 const int motorDirPin2_2 = 27; 
-![Uploading IMG20240112153731.jpg…]()
+
+![IMG20240112153750](https://github.com/FocasLab/tortoisebot/assets/99411053/c2545423-1dbb-4566-b538-202bffb4bc21)
+
+![IMG20240112160443](https://github.com/FocasLab/tortoisebot/assets/99411053/3e3da45a-0d03-4d5d-a5a9-f11a900e3336)
+
 
 
 ### 2.1 Change Wi-Fi's SSID and Password:
