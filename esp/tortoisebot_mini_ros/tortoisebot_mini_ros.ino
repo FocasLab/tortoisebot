@@ -5,7 +5,7 @@
 
 // WiFi Credentials
 const char* ssid = "focaslab";
-const char* password = "*******";
+const char* password = "wifi@focaslab";
 const uint16_t serverPort = 11411;  
 
 // WiFi Client and Server IP Address
