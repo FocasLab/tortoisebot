@@ -92,7 +92,7 @@ Use the this IP address the .ino file.
 IPAddress server(192,168,x,x);
 ```
 
-Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 31 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
+Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 13 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
 
 ### 2.3 Check Board and Port:
 
