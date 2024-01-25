@@ -74,7 +74,7 @@ const int motorDirPin2_2 = 27;
 
 ### 2.1 Change Wi-Fi's SSID and Password:
 
-Open the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code in Arduino IDE and change the SSID and Password of the Wi-Fi Connection.
+Open the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code in Arduino IDE and change the SSID and Password of the Wi-Fi Connection.
 
 ```
 const char* ssid = "";
@@ -92,7 +92,7 @@ Use the this IP address the .ino file.
 IPAddress server(192,168,x,x);
 ```
 
-Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 31 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
+Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 31 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
 
 ### 2.3 Check Board and Port:
 
@@ -100,7 +100,7 @@ Make sure the switch on motor driver board is turned off and battery is not conn
 
 ### 2.4 Upload the Code:
 
-Upload the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/main/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code on your ESP32 board.
+Upload the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code on your ESP32 board.
 
 ### 2.5 Connection:
 
