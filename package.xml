@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>tortoisebot</name>
+  <name>tortoisebot_mini</name>
   <version>1.0.0</version>
   <description>The tortoisebot_mini package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
-  <maintainer email="jeelchatrola@iisc.ac.in">JeelChatrola</maintainer>
+  <maintainer email="manas.juvvi@gmail.com">ManasJuvvi</maintainer>
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
