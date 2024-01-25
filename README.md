@@ -22,15 +22,36 @@ sudo apt-get install ros-noetic-rosserial-arduino
 sudo apt-get install ros-noetic-rosserial
 ```
 
-### 1.4 Clone the TortoiseBot Mini Repo:
-Clone the TortoiseBot Mini repo into your src folder of your catkin workspace
+
+
+## 2. Setup:
+### 2.0 Creating a ROS workspace and cloning the repository
+Create a ROS workspace, let's call our workspace tb_ws
+```
+mkdir -p ~/tb_ws/src
+```
+Change directory to tb_ws/src folder
+```
+cd tb_ws/src
+```
+Clone the TortoiseBot Mini repo into your src folder of your ROS workspace
 ```
 git clone https://github.com/FocasLab/tortoisebot
 ```
+Change directory to tb_ws 
+```
+cd ..
+```
+Build or make your workspace
+```
+catkin_make
+```
+or 
+```
+catkin build
+```
 
-## 2. Setup:
-
-### 2.0 Build the Arduino serial library and msgs 
+### 2.1 Build the Arduino serial library and msgs 
 Navigate to Arduino > libraries 
 Open a terminal in the current directory 
 ```
@@ -72,7 +93,7 @@ const int motorDirPin2_2 = 27;
 
 
 
-### 2.1 Change Wi-Fi's SSID and Password:
+### 2.2 Change Wi-Fi's SSID and Password:
 
 Open the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code in Arduino IDE and change the SSID and Password of the Wi-Fi Connection.
 
@@ -81,7 +102,7 @@ const char* ssid = "";
 const char* password = "";
 ```
 
-### 2.2 Change the ROS Master IP Address:
+### 2.3 Change the ROS Master IP Address:
 
 Run the following command on the machine which will act as ROS Master PC (in our case the lab computer) after connecting to the lab's wifi.
 ```
@@ -94,20 +115,20 @@ IPAddress server(192,168,x,x);
 
 Check the IP Address of your ROS Master PC using ifconfig command and put that in line number 13 of [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code with commas(,) instead of dot(.)
 
-### 2.3 Check Board and Port:
+### 2.4 Check Board and Port:
 
 Make sure the switch on motor driver board is turned off and battery is not connected and then connect your ESP32 board to your computer using USB type B cable. Make sure the board is selected to "ESP32 Dev Module" in Arduino IDE and select the appropriate Port as well.
 
-### 2.4 Upload the Code:
+### 2.5 Upload the Code:
 
 Upload the [tortoisebot_mini_ros](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/esp/tortoisebot_mini_ros/tortoisebot_mini_ros.ino) code on your ESP32 board.
 
-### 2.5 Connection:
+### 2.6 Connection:
 
 Once code is Successfully uploaded, disconnect the USB Cable and connect the DC Jack of Battery to the Board . <br>
 DO NOT TURN ON THE ROBOT YET!
 
-### 2.6 Connecting your laptop to ROS Master:
+### 2.7 Connecting your laptop to ROS Master:
 
 After Setting up the robot and uploading the code we will now setup the ROS on Multiple Machines. Add this lines to end of you ```.bashrc``` file.
 
