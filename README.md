@@ -60,7 +60,7 @@ rosrun rosserial_arduino make_libraries.py .
 This should build the required msgs 
 
 In your linux system in home,in Arduino folder-->Library the ros_lib folder will be present after building using the above command
-Inside this ros_lib folder create a new folder tortoisebot_mini and paste the diff.h file inside
+Inside this ros_lib folder create a new folder tortoisebot_mini and paste the [diff.h](https://github.com/FocasLab/tortoisebot/blob/tortoisebot_encoder/Diff.h) file inside
 
 CONNECTIONS- 
 There are 6 connecting wire from motor-
